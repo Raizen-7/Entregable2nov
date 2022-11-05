@@ -19,7 +19,6 @@ CREATE TABLE "Post" (
 
 CREATE TABLE "Category" (
   "Id" SERIAL PRIMARY KEY NOT NULL,
-  "rel_Category_Post_Id" integer,
   "Name" varchar NOT NULL,
   "Status" varchar
 );
@@ -27,7 +26,6 @@ CREATE TABLE "Category" (
 CREATE TABLE "Comment" (
   "Id" SERIAL PRIMARY KEY NOT NULL,
   "User_Id" integer,
-  "rel_Comment_Post" integer,
   "Content" varchar NOT NULL,
   "Status" varchar
 );
